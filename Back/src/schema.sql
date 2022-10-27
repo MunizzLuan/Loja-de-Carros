@@ -1,15 +1,15 @@
-CREATE TABLE IF NOT EXISTS users (
+CREATE TABLE IF NOT EXISTS usuarios (
     id SERIAL PRIMARY KEY ,
-    name TEXT NOT NULL, 
+    nome TEXT NOT NULL, 
     email TEXT UNIQUE NOT NULL,
-    password TEXT NOT NULL,
+    senha TEXT NOT NULL,
     
 )
 
-CREATE TABLE IF NOT EXISTS cars (
+CREATE TABLE IF NOT EXISTS carros (
     id SERIAL PRIMARY KEY ,
-    name TEXT NOT NULL, 
-    brand TEXT NOT NULL,
-    model TEXT NOT NULL,
+    nome TEXT NOT NULL, 
+    marca TEXT NOT NULL,
+    modelo TEXT NOT NULL,
     img TEXT NOT NULL
 )

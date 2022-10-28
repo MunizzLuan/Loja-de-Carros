@@ -1,0 +1,17 @@
+.nav-bar {
+    height: 50vh;
+}
+
+.left {
+    background-image: url('../../assets/backgroundlogin.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 35vw;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.content-login {}

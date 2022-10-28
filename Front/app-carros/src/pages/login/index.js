@@ -1,31 +1,33 @@
-
 import './styles.css';
+import Logo from '../../assets/car-logo.svg';
+
 
 function Login() {
-
-    function handleTask() {
-        const input = document.querySelector('#input-task');
-        const ul = document.querySelector('ul');
-
-        if (!input.value) {
-            return;
-        }
-
-        const li = document.createElement('li')
-        li.appendChild(document.createTextNode(input.value));
-        ul.appendChild(li);
-        input.value = '';
-    }
-
     return (
-        <div className='login'>
-            <input type="text" placeholder='Insira seu email' id="input-task" />
-            <button onClick={() => handleTask()}>
-                Login
-            </button>
-            <ul>
+        <div className='container-login'>
+            <img src={Logo} alt='logo' className='logo' />
 
-            </ul>
+            <div className='nav-bar'>
+                <div className='content-login'>
+                    <div className='left'>
+                    </div>
+
+                    <div className='right'>
+                        <form>
+                            <h2>Inicie a sessão com seu email</h2>
+                            <div>
+                                <label htmlFor='email'>Email</label>
+                                <input type="text" name='email' placeholder='Digite seu email' />
+                            </div>
+                            <div>
+                                <label htmlFor='senha'>Senha</label>
+                                <input type="password" name='senha' placeholder='Digite sua senha' />
+                            </div>
+                            <buttom>Iniciar sessão</buttom>
+                        </form>
+                    </div>
+                </div>
+            </div>
         </div>
     )
 

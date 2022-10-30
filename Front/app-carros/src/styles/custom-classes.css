@@ -1,0 +1,36 @@
+.container-inputs {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 24px;
+}
+
+.container-inputs label {
+    color: #484848;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 8px;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+
+}
+
+li {
+    float: right;
+
+}
+
+li a {
+    display: flex;
+    flex-direction: inherit;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+
+}

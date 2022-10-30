@@ -17,7 +17,7 @@ function Header() {
                                     Comprar carro
                                 </li>
                                 <li>
-                                    Vender carro
+                                    Cadastrar carro
                                 </li>
                                 <li>
                                     App Luan

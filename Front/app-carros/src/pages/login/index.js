@@ -1,34 +1,46 @@
 import './styles.css';
-import Logo from '../../assets/car-logo.svg';
+import Header from '../../components/Header';
+import { useNavigate } from 'react-router-dom';
 
 
 function Login() {
+    const navigate = useNavigate();
     return (
-        <div className='container-login'>
-            <img src={Logo} alt='logo' className='logo' />
+        <div className='header'>
+            <Header />
 
-            <div className='nav-bar'>
-                <div className='content-login'>
-                    <div className='left'>
-                    </div>
+            <div className='main'>
+                <section className='left'>
+                </section>
+                <section className='right'>
+                    <form>
+                        <h2>Inicie a sessão com seu e-mail</h2>
+                        <div className='container-inputs'>
+                            <label htmlFor='email'>Email</label>
+                            <input type="text" name='email' placeholder='Digite seu email' data-invalid-email="insira um email valido" />
+                        </div>
+                        <div className='container-inputs'>
+                            <label htmlFor='senha'>Senha</label>
+                            <input type="password" name='senha' placeholder='Digite sua senha' />
+                            <label>
+                                <button className='btn-senha'>Esqueceu sua senha?</button>
+                            </label>
+                        </div>
 
-                    <div className='right'>
-                        <form>
-                            <h2>Inicie a sessão com seu email</h2>
-                            <div>
-                                <label htmlFor='email'>Email</label>
-                                <input type="text" name='email' placeholder='Digite seu email' />
-                            </div>
-                            <div>
-                                <label htmlFor='senha'>Senha</label>
-                                <input type="password" name='senha' placeholder='Digite sua senha' />
-                            </div>
-                            <buttom>Iniciar sessão</buttom>
-                        </form>
-                    </div>
-                </div>
+                        <button
+                            className='btn-white btn-login'
+                            onClick={() => navigate('/cadastro')}
+                        >
+                            Iniciar sessão
+                        </button>
+                    </form>
+                </section>
+
             </div>
         </div>
+
+
+
     )
 
 }

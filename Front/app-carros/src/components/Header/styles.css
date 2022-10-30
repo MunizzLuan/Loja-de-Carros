@@ -1,0 +1,121 @@
+.header {
+    width: 100vw;
+    height: 100px;
+    display: block;
+    flex-direction: inline;
+    position: relative;
+    box-shadow: 0 0.063rem 0.313rem 0 rgb(70 70 70 / 15%), 0 0.125rem 0.125rem 0 rgb(70 70 70 / 15%), 0 0.188rem 0.125rem -0.125rem rgb(70 70 70 / 15%);
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    margin-left: 200px;
+    margin-right: 200px;
+    box-sizing: border-box;
+    width: 80vw;
+    height: 85px;
+}
+
+.logo-area {
+    display: flex;
+    float: inline-start;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-area img {
+    display: flex;
+    height: 50px;
+}
+
+.menu-nav {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.profile-area {
+    display: flex;
+    align-items: center;
+    height: 30px;
+    width: 30px;
+
+}
+
+.profile-area img {
+    display: flex;
+    height: 30px;
+    padding-left: 30px;
+    cursor: pointer;
+}
+
+.profile-area img:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+li {
+    align-items: center;
+    justify-content: center;
+    padding-left: 30px;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    cursor: pointer;
+    color: #8f8f8f;
+}
+
+.menu-nav nav {
+    display: flex;
+}
+
+.menu-nav li {
+    display: flex;
+    flex-direction: column;
+    position: center;
+    float: left;
+}
+
+.menu-nav li:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}
+
+/* 
+
+.menu {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: inline;
+}
+
+
+
+/* .menu li {
+    flex-direction: inline;
+    flex-grow: 1;
+    align-items: center;
+    margin-left: 25px;
+    align-items: center;
+}
+
+.menu_nav li:hover {
+    color: black;
+    cursor: pointer;
+    transition: 0.5s ease-out;
+}  */

@@ -1,17 +1,53 @@
-.nav-bar {
-    height: 50vh;
+.main {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    background-color: white;
+    font-family: 'Roboto', sans-serif;
 }
 
 .left {
     background-image: url('../../assets/backgroundlogin.jpg');
-    background-position: center;
+    background-position: 60% 40%;
+    -webkit-box-shadow: 7px 0px 20px -7px rgba(0, 0, 0, 0.38);
+    -moz-box-shadow: 7px 0px 20px -7px rgba(0, 0, 0, 0.38);
+    box-shadow: 7px 0px 20px -7px rgba(0, 0, 0, 0.38);
+    flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
     height: 100vh;
-    width: 35vw;
+    width: 55%;
     display: flex;
     align-items: center;
     position: relative;
 }
 
-.content-login {}
+
+.right {
+    display: flex;
+    justify-content: center;
+    flex-direction: center;
+    position: center;
+    height: 50vh;
+    width: 100vw;
+}
+
+.right form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 40px 24px;
+    height: 497px;
+    width: 400px;
+}
+
+.right h2 {
+    font-weight: 300px;
+}
+
+.right form button {
+    margin-top: 25px;
+}

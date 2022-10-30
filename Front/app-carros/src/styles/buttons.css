@@ -1,0 +1,44 @@
+button {
+    all: unset;
+    cursor: pointer;
+    width: 100%;
+    border-radius: 10px;
+
+    font-size: 14px;
+    font-weight: bold;
+    font-family: 'Roboto', sans-serif;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 10px;
+
+}
+
+.btn-login {
+    height: 48px;
+}
+
+.btn-login:hover {
+    background-color: black;
+    color: white;
+}
+
+.btn-black {
+    background-color: black;
+    color: white;
+}
+
+.btn-white {
+    color: #d1caca;
+    background-color: #f3ecec;
+}
+
+.btn-senha {
+    all: unset;
+    cursor: pointer;
+    color: deepskyblue;
+    flex-direction: column;
+    position: relative;
+    margin: 10px;
+}
